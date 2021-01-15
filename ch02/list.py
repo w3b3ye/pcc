@@ -18,10 +18,21 @@ print(grocery)
 print("\nCalculate square roots using list")
 
 #First way of writing code
+print("First Method")
 squares =[]
 for value in range(1,11):
     square=value**2
     squares.append(square)
 print(squares)
 
- 
+#Second way of writing code
+print("Second Method")
+squares =[]
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+
+#Third way of writing code
+print("Third Method, called List Comprehensions")
+squares = [value**2 for value in range(1,11)]
+print(squares)
