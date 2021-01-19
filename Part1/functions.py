@@ -15,9 +15,13 @@ about_pet(animal_type='dog',pet_name='tiger') #Sequence does not matter when usi
 about_pet(pet_name='tommy') #We have not passed animal_type, python will take the default value
 
 #One more function example
-def formatted_name(first_name,last_name):
+def formatted_name(first_name,last_name,middle_name=''): #middle_name is optional parameter here 
     """Return a full name, well formatted."""
-    full_name = f"\n{first_name} {last_name}"
+    if middle_name:
+        full_name = f"\n{first_name} {middle_name} {last_name}"
+    else:
+        full_name = f"\n{first_name} {last_name}"
     return full_name.title()
 
-print(formatted_name('jimi','hendrix'))  
+print(formatted_name('jimi','hendrix')) 
+print(formatted_name('jimi','hendrix','lee'))  
