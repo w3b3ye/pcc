@@ -25,3 +25,22 @@ def formatted_name(first_name,last_name,middle_name=''): #middle_name is optiona
 
 print(formatted_name('jimi','hendrix')) 
 print(formatted_name('jimi','hendrix','lee'))  
+
+#Return a dictionary 
+
+
+def user_details(first_name,last_name,age=None):
+    """Retrun a dictionary with user details"""
+    person = {'first':first_name,'last':last_name}
+    if age:
+        person.update({'age':age})
+        #person['age'] = age
+    return person
+
+user = user_details('jimi','hendrix',age=27)
+print(user)
+
+print(user_details('mimi','vendrix'))
+
+
+    
