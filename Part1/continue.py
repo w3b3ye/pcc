@@ -6,3 +6,4 @@ while num <10:
     if num % 2 == 0:
         continue #If number is even continue will break the loop and start from beginning again
     print(num)
+
