@@ -49,6 +49,7 @@ class Battery:
 
     def get_range(self):
         """Print a statement about the range this battery provides."""
+        range = 0
         if self.battery_size == 75:
             range = 260
         elif self.battery_size == 100:
