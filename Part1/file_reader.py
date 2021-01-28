@@ -15,6 +15,8 @@ file.close()
 filename = 'pi_digits.txt'
 
 with open(filename) as file_object:
-    for line in file_object:
+    lines = file_object.readlines() #readlines() method will read the file and create a list with all values
+    print(lines)
+    for line in lines:
         print(line.rstrip()) #Without using rstrip additional blank lines will be added to the output 
 
