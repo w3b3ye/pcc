@@ -8,7 +8,7 @@ def get_stored_username():
     try:
         with open(filename) as f:
             username = json.load(f)
-    except (FileNotFoundError,JSONDecodeError): #If file is empty, Python will throw JSONDecodeError, need to handle both
+    except (FileNotFoundError,JSONDecodeError): #If file is empty, Python will throw JSONDecodeError, need to handle that and FileNotFoundError both.
         return None
     else:
         return username
