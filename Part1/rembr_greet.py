@@ -15,7 +15,6 @@ def get_stored_username():
 def greet_user():
     """Greet the user by name."""
     username = get_stored_username()
-    filename = 'username.json'
     if username:
         print(f"Welcome back, {username}!")
     else:
