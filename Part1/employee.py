@@ -7,6 +7,7 @@ class Employee:
 
     def give_raise(self, incr=5000):
         self.salary = self.salary + incr
+        return self.salary
         
 
 if __name__ == '__main__':
