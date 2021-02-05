@@ -7,7 +7,7 @@ class Topic(models.Model):
      text = models.CharField( max_length = 200)
      date_added = models.DateTimeField( auto_now_add = True)
      
-     def __str__(self): 
+     def __str__(self): #This function will show the default field when you query the 'Topic' from database. Here it will return text.
         """ Return a string representation of the model.""" 
         return self.text
 
